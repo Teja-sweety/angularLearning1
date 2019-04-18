@@ -1,0 +1,39 @@
+<h2>Items for billings</h2>
+
+<div style="width:800px; margin:0 auto;">
+<form id="myForm">
+<table class="abc">
+  <tr>
+    <th>#</th>
+    <th>Item Name</th>
+    <th>no.of.Items</th>
+    <th>Item price</th>
+    <th></th>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td><input [(ngModel)]="pname" name="pname" type="text"></td>
+    <td><input [(ngModel)]="pnum" name="pnum" type="number"></td>
+    <td><input [(ngModel)]="pcost" name="pcost" type="number"></td>
+    <td><button (click)="adding()">add</button></td>
+  </tr>
+
+  <tr *ngFor="let p of arrayOfProducts; let i=index">
+    <td>{{i+1}}</td>
+    <td>{{p.name}}</td>
+    <td>{{p.num}}</td>
+    <td>{{p.price}}</td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td>TotalAmount</td>
+    <td></td>
+    <td>{{sum}}</td>
+  </tr>
+
+ </table>
+</form>
+
+</div>
