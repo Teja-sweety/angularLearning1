@@ -1,3 +1,10 @@
+#git process
+
+`git status` : to know which fileswere modifided from last commit
+`git add . ` / `git add ` (file path followed by space) :  to add the changes to staging environment
+`git commit -m "statement for commit" ` :  to commit the changes to staging environment
+`git push` : push changes to git
+
 # MyFirstApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.0.
